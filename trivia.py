@@ -11,16 +11,25 @@ for question in data:
     for index, choice in enumerate(question["choices"]):
         print(index + 1, "-", choice)
 
-    # convert user input to integer "correct_answer" data-type
-    user_choice = int(input("Enter your answer: "))
+    while True:
+        try:
+            # convert user input to integer "correct_answer" data-type
+            user_choice = int(input("Enter your answer: "))
+            if 1 <= user_choice <= len(question["choices"]):
+                break
+            else:
+                print(f"Please enter a number between 1 and {len(question['choices'])}")
+        except ValueError:
+            print("Please enter a valid number.")
+
     question["user_choice"] = user_choice
 
-score = 0
+question_score = 0
 
 # for-loop to iterate over the stored user choice to check if match with "correct_answer"
 for index, question in enumerate(data):
     if question["user_choice"] == question["correct_answer"]:
-        score = score + 1
+        question_score = question_score + 1
         result = "Correct Answer"
     else:
         result = "Wrong Answer"
@@ -28,4 +37,8 @@ for index, question in enumerate(data):
               f"Correct answer: {question['correct_answer']}"
     print(message)
 
-print(score, "/", len(data))
+total_questions = len(data)
+
+print(f"You got {question_score} out of {total_questions} correct")
+print(f"Your total score is {question_score * 10} / {total_questions * 10}")
+
