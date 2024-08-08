@@ -1,6 +1,52 @@
-[{"question_text": "What are dolphins?",
-  "choices": ["Amphibians", "Fish", "Mammals", "Birds"],
-  "correct_answer": 3},
- {"question_text": "What occupies most of the Earth's surface?",
-  "choices": ["Land", "Water"],
-  "correct_answer": 2}]
+[
+  {
+    "question_text": "What is the largest planet in our solar system?",
+    "choices": ["Earth", "Jupiter", "Mars", "Saturn"],
+    "correct_answer": 2
+  },
+  {
+    "question_text": "Which is the longest river in the world?",
+    "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "correct_answer": 2
+  },
+  {
+    "question_text": "Who wrote 'Romeo and Juliet'?",
+    "choices": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+    "correct_answer": 2
+  },
+  {
+    "question_text": "Which ocean is the largest?",
+    "choices": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "correct_answer": 4
+  },
+  {
+    "question_text": "What is the capital city of Japan?",
+    "choices": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+    "correct_answer": 3
+  },
+  {
+    "question_text": "Which animal is known as the 'King of the Jungle'?",
+    "choices": ["Tiger", "Elephant", "Lion", "Leopard"],
+    "correct_answer": 3
+  },
+  {
+    "question_text": "What is the hardest natural substance on Earth?",
+    "choices": ["Gold", "Iron", "Diamond", "Quartz"],
+    "correct_answer": 3
+  },
+  {
+    "question_text": "Which continent is the Sahara Desert located on?",
+    "choices": ["Asia", "Africa", "Australia", "South America"],
+    "correct_answer": 2
+  },
+  {
+    "question_text": "How many continents are there on Earth?",
+    "choices": ["5", "6", "7", "8"],
+    "correct_answer": 3
+  },
+  {
+    "question_text": "Who painted the Mona Lisa?",
+    "choices": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+    "correct_answer": 2
+  }
+]
